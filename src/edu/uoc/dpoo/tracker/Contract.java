@@ -37,13 +37,14 @@ public class Contract {
      * @param end
      * @param allowFriends
      */
-    public Contract(int contractId, Date start, Date end, boolean allowFriends)
+    public Contract(int contractId, Date start, Date end, boolean allowFriends, Pet devices)
     {
         //TODO
         this.contractId = contractId;
         this.start = start;
         this.end = end;
         this.allowFriends = allowFriends;
+        this.pet = devices;
     }
 
     /**
@@ -105,5 +106,14 @@ public class Contract {
 
     public boolean getAllowFriends() {
         return allowFriends;
+    }
+
+    /**
+     * This method set device
+     * @param pet
+     */
+    public void setDevice(Pet pet)
+    {
+        this.pet = pet;
     }
 }

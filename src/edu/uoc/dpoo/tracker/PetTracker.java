@@ -19,6 +19,8 @@ public class PetTracker {
      */
     private ArrayList<Contract> contracts;
 
+    private Pet device;
+
     /**
      * Constructor method
      */
@@ -70,10 +72,11 @@ public class PetTracker {
     {
         //TODO
         if(!existContract(contractId)){
-            Contract myContract = new Contract(contractId, start, end, allowFriends);
+            Contract myContract = new Contract(contractId, start, end, allowFriends, null);
             this.contracts.add(myContract);
-            Pet myPet = new Pet(petName, -1, myContract, null);
-            this.devices.add(myPet);
+            Pet pet = new Pet(petName, -1, myContract, null);
+            this.devices.add(pet);
+            this.getContract(contractId).setDevice(pet);
         }
     }
 

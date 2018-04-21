@@ -2,7 +2,6 @@ package edu.uoc.dpoo.tracker;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Pet {
 
@@ -37,11 +36,11 @@ public class Pet {
      * @param name of pet
      * @param serial GPS
      */
-    public Pet(String name, int serial, Contract myContract, PetTracker tracker)
+    public Pet(String name, int serial, Contract contract, PetTracker tracker)
     {
         this.name = name;
         this.serial = serial;
-        this.contract = myContract;
+        this.contract = contract;
         this.tracker = tracker;
         this.historic = new ArrayList<Coordinate>();
     }
