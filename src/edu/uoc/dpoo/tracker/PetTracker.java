@@ -133,8 +133,9 @@ public class PetTracker {
      */
     public void sendMessage(int contractId, MessageType type)
     {
-        if (getContract(contractId).getContractId() == contractId) {
-            Date now = new Date();
+        Date now = new Date();
+
+        if (existContract(contractId)) {
             Message message = new Message(contractId, now, null, type);
             this.messages.add(message);
         }

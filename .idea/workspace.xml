@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02b863f4-5b39-4391-b370-7a8d41255e63" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex3_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/TestAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Pet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PetTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PetTracker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +17,8 @@
       <file leaf-file-name="PetTracker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PetTracker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="224" column="35" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+            <state relative-caret-position="197">
+              <caret line="138" column="20" lean-forward="true" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#PetTracker#0;class#PetTracker#0" />
@@ -44,7 +38,7 @@
       <file leaf-file-name="Contract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Contract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
+            <state relative-caret-position="-61">
               <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="e#1211#1212#0" expanded="true" />
@@ -64,7 +58,7 @@
       <file leaf-file-name="Pet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Pet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1459">
+            <state relative-caret-position="6">
               <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,8 +89,8 @@
       <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-371">
-              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="1780">
+              <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
               <folding>
                 <element signature="e#1942#1943#0" expanded="true" />
                 <element signature="e#1969#1970#0" expanded="true" />
@@ -108,8 +102,8 @@
       <file leaf-file-name="PR1_Ex3_Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex3_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2809">
-              <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
+            <state relative-caret-position="232">
+              <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -407,23 +401,11 @@
       <updated>1524002635121</updated>
       <workItem from="1524002642085" duration="9556000" />
       <workItem from="1524255147239" duration="12621000" />
-      <workItem from="1524270483184" duration="18731000" />
+      <workItem from="1524270483184" duration="19577000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 19h 45m 38s.xml">
-      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 19h 47m 19s.xml">
-      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 19h 49m 13s.xml">
-      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 19h 50m 31s.xml">
-      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PR1_Ex3_Test - 2018.04.22 at 19h 53m 42s.xml">
       <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
     </history-entry>
@@ -442,9 +424,21 @@
     <history-entry file="TestAll - 2018.04.22 at 20h 07m 05s.xml">
       <configuration name="TestAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 20h 22m 34s.xml">
+      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PR1_Ex2_Test - 2018.04.22 at 20h 22m 42s.xml">
+      <configuration name="PR1_Ex2_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 20h 23m 27s.xml">
+      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PR1_Ex3_Test - 2018.04.22 at 20h 32m 24s.xml">
+      <configuration name="PR1_Ex3_Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40954000" />
+    <option name="totallyTimeSpent" value="41800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -928,13 +922,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex2_TestTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex2_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-519">
-          <caret line="186" column="13" lean-forward="true" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/CircularSafeZone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-179">
@@ -963,9 +950,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex2_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="186" column="13" lean-forward="true" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
+            <element signature="docComment;method#setContractId#0;class#Contract#0" />
+            <element signature="docComment;method#getEnd#0;class#Contract#0" />
+            <element signature="docComment;method#setEnd#0;class#Contract#0" />
+            <element signature="docComment;method#getStart#0;class#Contract#0" />
+            <element signature="docComment;method#setStart#0;class#Contract#0" />
+            <element signature="e#2191#2192#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1780">
+          <caret line="99" column="7" lean-forward="true" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
+          <folding>
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Pet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1459">
+        <state relative-caret-position="6">
           <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -992,46 +1015,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-371">
-          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding>
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#1969#1970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PR1_Ex3_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2809">
-          <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="docComment;method#setContractId#0;class#Contract#0" />
-            <element signature="docComment;method#getEnd#0;class#Contract#0" />
-            <element signature="docComment;method#setEnd#0;class#Contract#0" />
-            <element signature="docComment;method#getStart#0;class#Contract#0" />
-            <element signature="docComment;method#setStart#0;class#Contract#0" />
-            <element signature="e#2191#2192#0" expanded="true" />
-            <element signature="e#2221#2222#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/uoc/dpoo/tracker/PetTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="224" column="35" selection-start-line="224" selection-start-column="35" selection-end-line="224" selection-end-column="35" />
+        <state relative-caret-position="197">
+          <caret line="138" column="20" lean-forward="true" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#PetTracker#0;class#PetTracker#0" />
