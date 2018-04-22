@@ -2,6 +2,7 @@ package edu.uoc.dpoo.tracker;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Pet {
 
@@ -100,10 +101,16 @@ public class Pet {
      * This method return unread messages
      * @return Message
      */
-    public Message getUnreadMessages()
+    public List<Message> getUnreadMessages()
     {
-        //TODO
-        return null;
+        List<Message> unreadMessages = new ArrayList<Message>();
+        for (int i = 0; i < this.tracker.getMessages().size(); i++){
+            if (this.tracker.getMessages().get(i).isUnreaded()){
+                unreadMessages.add(this.tracker.getMessages().get(i));
+            }
+        }
+
+        return  unreadMessages;
     }
 
     /**

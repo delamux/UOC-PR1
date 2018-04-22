@@ -1,7 +1,9 @@
 package edu.uoc.dpoo.tracker;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class PetTracker {
 
@@ -12,14 +14,17 @@ public class PetTracker {
     /**
      * This attribute save the pets in the pet tracker
      */
-    private ArrayList<Pet> devices;
+    private List<Pet> devices;
 
     /**
      * This attribute save the pets in the pet tracker
      */
-    private ArrayList<Contract> contracts;
+    private List<Contract> contracts;
 
-    private Pet device;
+    /**
+     * This attribute save messages associated to contract
+     */
+    private List<Message> messages;
 
     /**
      * Constructor method
@@ -28,6 +33,7 @@ public class PetTracker {
     {
         this.devices = new ArrayList<Pet>();
         this.contracts = new ArrayList<Contract>();
+        this.messages = new ArrayList<Message>();
     }
 
     /**
@@ -70,13 +76,17 @@ public class PetTracker {
      */
     public void addContract(int contractId, Date start, Date end, String petName, Boolean allowFriends)
     {
-        //TODO
+        Date now = new Date();
         if(!existContract(contractId)){
-            Contract myContract = new Contract(contractId, start, end, allowFriends, null);
-            this.contracts.add(myContract);
-            Pet pet = new Pet(petName, -1, myContract, null);
+            Contract contract = new Contract(contractId, start, end, allowFriends, null);
+            this.contracts.add(contract);
+            Pet pet = new Pet(petName, -1, contract, this);
             this.devices.add(pet);
-            this.getContract(contractId).setDevice(pet);
+            contract.setDevice(pet);
+            /*
+            Message message = new Message(contractId, now, null, null);
+            this.messages.add(message);
+             */
         }
     }
 
@@ -87,7 +97,22 @@ public class PetTracker {
      */
     public void delContract(int contractId)
     {
-        //TODO
+        for (int i = 0; i < contracts.size(); i++ ) {
+            if (contracts.get(i).getContractId() == contractId){
+                //remove the devices
+                for (int j = 0; j < devices.size(); j++){
+                    if(devices.get(j).getContract() == contracts.get(i)){
+                        devices.remove(j);
+                    }
+                }
+                for (int k = 0; k < messages.size(); k++) {
+                    if (messages.get(k).getContractId() == contractId){
+                        messages.remove(k);
+                    }
+                }
+                contracts.remove(i);
+            }
+        }
     }
 
     /**
@@ -105,22 +130,25 @@ public class PetTracker {
      * Send message method
      * @param contractId contract number
      * @param type message type
-     * @return
      */
     public void sendMessage(int contractId, MessageType type)
     {
-        //TODO
+        if (getContract(contractId).getContractId() == contractId) {
+            Date now = new Date();
+            Message message = new Message(contractId, now, null, type);
+            this.messages.add(message);
+        }
+
     }
 
     /**
      * Method to link device
      * @param contractId contract number
      * @param serial number gps
-     * @return
      */
     public void linkDevice(int contractId, int serial)
     {
-        //TODO
+        getContract(contractId).getPet().setSerial(serial);
     }
 
     /**
@@ -130,7 +158,6 @@ public class PetTracker {
      * @param centerLat zone
      * @param centerLon zone
      * @param size zone
-     * @return
      */
     public void newSquareSafeZone(SafeZone type, String description, float centerLat, float centerLon, float size)
     {
@@ -144,7 +171,6 @@ public class PetTracker {
      * @param centerLat zone
      * @param centerLon zone
      * @param size zone
-     * @return void
      */
     public void newCircularSafeZone(SafeZone type, String description, float centerLat, float centerLon, float size)
     {
@@ -181,20 +207,33 @@ public class PetTracker {
      * This method return devices
      * @return ArrayList
      */
-    public ArrayList<Pet> getDevices()
+    public List<Pet> getDevices()
     {
         return this.devices;
     }
 
+    /**
+     * This method get contract from list
+     * @param contractId
+     * @return contract object
+     */
     public Contract getContract(int contractId)
     {
         Contract c = null;
-        for (Contract contract: contracts) {
-            if (contract.getContractId() == contractId){
-                c = contract;
+        for (int i = 0; i < contracts.size(); i++) {
+            if (contracts.get(i).getContractId() == contractId){
+                c = contracts.get(i);
             }
         }
 
         return c;
+    }
+
+    /**
+     * This method return list of messages
+     * @return List
+     */
+    public List<Message> getMessages() {
+        return messages;
     }
 }

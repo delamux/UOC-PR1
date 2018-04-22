@@ -10,7 +10,7 @@ public class Message {
     private int contractId;
 
     /**
-     * This attribute is the date of creation messafe
+     * This attribute is the date of creation message
      */
     private Date createAt;
 
@@ -19,17 +19,20 @@ public class Message {
      */
     private Date readAt;
 
+    private MessageType type;
+
     /**
      * Constructor method
      * @param contractId number
      * @param createAt date creation
      * @param readAt date readed
      */
-    public Message(int contractId, Date createAt, Date readAt)
+    public Message(int contractId, Date createAt, Date readAt, MessageType type)
     {
         this.contractId = contractId;
         this.createAt = createAt;
         this.readAt = readAt;
+        this.type = type;
     }
 
     /**
@@ -37,7 +40,8 @@ public class Message {
      */
     public void read()
     {
-        //TODO
+       Date now = new Date();
+       this.readAt = now;
     }
 
     /**
@@ -46,15 +50,18 @@ public class Message {
      */
     public boolean isUnreaded()
     {
-        //TODO
-        return  true;
+        if (this.readAt == null) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
      * This method get de Date of creation message
      * @return Date
      */
-    public Date getCreateAt() {
+    public Date getCreatedAt() {
         return createAt;
     }
 
@@ -89,4 +96,13 @@ public class Message {
     public void setContractId(int contractId) {
         this.contractId = contractId;
     }
+
+    /**
+     * This method return
+     * @return
+     */
+    public MessageType getType(){
+        return type;
+    }
+
 }

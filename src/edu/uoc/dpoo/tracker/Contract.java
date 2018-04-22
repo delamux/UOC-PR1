@@ -39,7 +39,6 @@ public class Contract {
      */
     public Contract(int contractId, Date start, Date end, boolean allowFriends, Pet devices)
     {
-        //TODO
         this.contractId = contractId;
         this.start = start;
         this.end = end;
